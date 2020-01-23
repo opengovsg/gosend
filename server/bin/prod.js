@@ -10,10 +10,19 @@ if (config.sentry_dsn) {
   Sentry.init({ dsn: config.sentry_dsn });
 }
 
+const isLoggedIn = (req) => {
+  if(req.session && req.session.user && req.session.user.email){
+    return validator.isEmail(req.session.user.email) && req.session.user.email.endsWith('.gov.sg')
+  }
+  return false
+}
 const app = express();
 
 expressWs(app, null, { perMessageDeflate: false, wsOptions: {
   verifyClient: function(info, done){
+    if(isLoggedIn(info.req)){
+      return done(true)
+    }
     return done(false, 401, 'Failed')
   }
 } });

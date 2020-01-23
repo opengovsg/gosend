@@ -6,13 +6,21 @@ const express = require('express');
 const expressWs = require('@dannycoates/express-ws');
 const morgan = require('morgan');
 const config = require('../config');
-
 const ID_REGEX = '([0-9a-fA-F]{10, 16})';
-
+const validator = require('validator')
 module.exports = function(app, devServer) {
   const wsapp = express();
+  const isLoggedIn = (req) => {
+    if(req.session && req.session.user && req.session.user.email){
+      return validator.isEmail(req.session.user.email) && req.session.user.email.endsWith('.gov.sg')
+    }
+    return false
+  }
   expressWs(wsapp, null, { perMessageDeflate: false, wsOptions: {
     verifyClient: function(info, done){
+      if(isLoggedIn(info.req)){
+        return done(true)
+      }
       return done(false, 401, 'Failed')
     }
   } });
