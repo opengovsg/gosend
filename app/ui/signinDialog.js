@@ -34,13 +34,6 @@ module.exports = function() {
           class="flex flex-col flex-grow m-4 md:self-center md:w-128 lg:max-w-xs"
         >
               ${form}
-          <button
-            class="my-3 link-blue font-medium"
-            title="${state.translate('deletePopupCancel')}"
-            onclick=${cancel}
-          >
-            ${state.translate('deletePopupCancel')}
-          </button>
         </section>
       </send-signup-dialog>
     `;
