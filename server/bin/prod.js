@@ -12,7 +12,11 @@ if (config.sentry_dsn) {
 
 const app = express();
 
-expressWs(app, null, { perMessageDeflate: false });
+expressWs(app, null, { perMessageDeflate: false, wsOptions: {
+  verifyClient: function(info, done){
+    return done(false, 401, 'Failed')
+  }
+} });
 routes(app);
 app.ws('/api/ws', require('../routes/ws'));
 
