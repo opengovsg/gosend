@@ -31,7 +31,6 @@ class Account extends Component {
 
   logout(event) {
     event.preventDefault();
-    this.emit('logout');
   }
 
   changed() {
@@ -62,13 +61,6 @@ class Account extends Component {
     if (!this.local.loggedIn) {
       return html`
         <send-account>
-          <button
-            class="px-4 py-2 md:px-8 md:py-4 focus:outline signin border-2 link-blue border-blue-60 hover:border-blue-70 dark:border-blue-40 dark:hover:border-blue-50"
-            onclick="${e => this.login(e)}"
-            title="${translate('signInOnlyButton')}"
-          >
-            ${translate('signInOnlyButton')}
-          </button>
         </send-account>
       `;
     }

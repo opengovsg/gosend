@@ -45,16 +45,6 @@ export default function(state, emitter) {
     lastRender = Date.now();
   });
 
-  emitter.on('login', email => {
-    state.user.login(email);
-  });
-
-  emitter.on('logout', () => {
-    state.user.logout();
-    metrics.loggedOut({ trigger: 'button' });
-    emitter.emit('pushState', '/');
-  });
-
   emitter.on('removeUpload', file => {
     state.archive.remove(file);
     if (state.archive.numFiles === 0) {
