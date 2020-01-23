@@ -307,8 +307,24 @@ export default function(state, emitter) {
     render();
   });
 
-  emitter.on('getSignInOtp', email => {
-    state.user.getSignInOtp(email);
+  emitter.on('getSignInOtp', async (email) => {
+    const status = await state.user.getSignInOtp(email);
+    if(status === 200){
+      state.user.otpEmail = email
+    }
+    render()
+  });
+
+  emitter.on('verifySignInOtp', async ({email, otp}) => {
+    const status = await state.user.verifySignInOtp(email, otp);
+    if(status === 200){
+      emitter.emit('closeModal')
+      emitter.emit('pushState', '/upload');  
+    } else {
+      state.modal = signinDialog();
+      render();
+    }
+   
   });
 
   setInterval(() => {

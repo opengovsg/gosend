@@ -256,8 +256,7 @@ export default class User {
        email
       })
     });
-    const code = await response.code;
-    return code
+    return response.status
   }
 
   async verifySignInOtp(email, otp){
@@ -271,7 +270,14 @@ export default class User {
        otp
       })
     });
-    const code = await response.code;
-    return code
+    return response.status
+  }
+
+  get otpEmail() {
+    return this.info.otpEmail || '';
+  }
+
+  set otpEmail(value) {
+    this.info.otpEmail = value
   }
 }

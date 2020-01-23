@@ -1,11 +1,13 @@
 const html = require('choo/html');
 const assets = require('../../common/assets');
-const { bytes, platform } = require('../utils');
+const { bytes } = require('../utils');
 const validator = require('validator')
+const getOtpForm = require('./getOtpForm')
+const verifyOtpForm = require('./verifyOtpForm')
 module.exports = function() {
   return function(state, emit, close) {
     const DAYS = Math.floor(state.LIMITS.MAX_EXPIRE_SECONDS / 86400);
-    const hidden = platform() === 'android' ? 'hidden' : '';
+    const form = state.user.otpEmail !== '' ? verifyOtpForm(state, emit) : getOtpForm(state, emit)
     let submitting = false;
     return html`
       <send-signup-dialog
@@ -37,21 +39,7 @@ module.exports = function() {
         <section
           class="flex flex-col flex-grow m-4 md:self-center md:w-128 lg:max-w-xs"
         >
-          <form onsubmit=${submitEmail} data-no-csrf>
-            <input
-              id="email-input"
-              type="email"
-              class="${hidden} border rounded-lg w-full px-2 py-1 h-12 mb-3 text-lg text-grey-70 leading-loose dark:bg-grey-80 dark:text-white"
-              placeholder=${state.translate('emailPlaceholder')}
-            />
-            <input
-              class="btn rounded-lg w-full flex flex-shrink-0 items-center justify-center"
-              value="${state.translate('signInOnlyButton')}"
-              title="${state.translate('signInOnlyButton')}"
-              id="email-submit"
-              type="submit"
-            />
-          </form>
+              ${form}
           <button
             class="my-3 link-blue font-medium"
             title="${state.translate('deletePopupCancel')}"
