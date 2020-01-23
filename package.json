@@ -8,7 +8,7 @@
   "license": "MPL-2.0",
   "private": true,
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "./node_modules/rimraf/bin.js dist",
     "build": "npm run clean && webpack",
     "lint": "npm-run-all lint:*",
     "lint:css": "stylelint app/*.css app/**/*.css",
