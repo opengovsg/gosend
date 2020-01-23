@@ -62,7 +62,7 @@ const conf = convict({
   redis_host: {
     format: String,
     default: 'localhost',
-    env: 'REDIS_HOST'
+    env: 'REDIS_URL'
   },
   redis_event_expire: {
     format: Boolean,

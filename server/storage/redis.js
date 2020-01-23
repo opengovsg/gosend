@@ -8,8 +8,9 @@ module.exports = function(config) {
 
   //eslint-disable-next-line security/detect-non-literal-require
   const redis = require(redis_lib);
+  const options = config.redis_host.startsWith('redis://') ?  { url: config.redis_host } : { host: config.redis_host }
   const client = redis.createClient({
-    host: config.redis_host,
+    ...options,
     retry_strategy: options => {
       if (options.total_retry_time > 10000) {
         client.emit('error', 'Retry time exhausted');
