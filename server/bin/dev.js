@@ -8,7 +8,9 @@ const morgan = require('morgan');
 const config = require('../config');
 const ID_REGEX = '([0-9a-fA-F]{10, 16})';
 const validator = require('validator')
+const sessionParser = require('../routes/session')
 module.exports = function(app, devServer) {
+
   const wsapp = express();
   const isLoggedIn = (req) => {
     if(req.session && req.session.user && req.session.user.email){
@@ -18,10 +20,12 @@ module.exports = function(app, devServer) {
   }
   expressWs(wsapp, null, { perMessageDeflate: false, wsOptions: {
     verifyClient: function(info, done){
-      if(isLoggedIn(info.req)){
-        return done(true)
-      }
-      return done(false, 401, 'Failed')
+      sessionParser(info.req, {}, ()=>{
+        if(isLoggedIn(info.req)){
+          return done(true)
+        }
+        return done(false, 401, 'Failed')
+      })
     }
   } });
   routes(wsapp);

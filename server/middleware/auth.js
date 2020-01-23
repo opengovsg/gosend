@@ -11,7 +11,6 @@ const isLoggedIn = (req) => {
 }
 module.exports = {
   hmac: async function(req, res, next) {
-    if(!isLoggedIn(req)) return res.sendStatus(401)
     const id = req.params.id;
     const authHeader = req.header('Authorization');
     if (id && authHeader) {

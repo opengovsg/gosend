@@ -65,8 +65,6 @@ module.exports = function(app) {
       })
     );
   }
-  app.set('trust proxy', 1) // For HTTPS cookies (our TLS terminates at load balancer, not ec2)
-  app.use(require('./session'))
   app.use(function(req, res, next) {
     res.set('Pragma', 'no-cache');
     res.set(
@@ -75,6 +73,7 @@ module.exports = function(app) {
     );
     next();
   });
+  app.use(require('./session'))
   app.use(bodyParser.json());
   app.use(bodyParser.text());
   app.get('/', language, pages.index);
