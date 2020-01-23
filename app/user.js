@@ -20,8 +20,9 @@ async function hashId(id) {
 }
 
 export default class User {
-  constructor(storage, limits, authConfig) {
+  constructor(storage, limits, authConfig, otpConfig) {
     this.authConfig = authConfig;
+    this.otpConfig = otpConfig;
     this.limits = limits;
     this.storage = storage;
     this.data = storage.user || {};
@@ -243,5 +244,34 @@ export default class User {
 
   toJSON() {
     return this.info;
+  }
+
+  async getSignInOtp(email){
+    const response = await fetch(this.otpConfig.get_endpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+       email
+      })
+    });
+    const code = await response.code;
+    return code
+  }
+
+  async verifySignInOtp(email, otp){
+    const response = await fetch(this.otpConfig.verify_endpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+       email,
+       otp
+      })
+    });
+    const code = await response.code;
+    return code
   }
 }

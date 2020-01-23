@@ -23,6 +23,11 @@ module.exports = async function(req) {
   if (config.survey_url) {
     prefs.surveyUrl = config.survey_url;
   }
+
+  const otpConfig = {
+    get_endpoint : '/api/getOtp',
+    verify_endpoint: '/api/verifyOtp'
+  }
   return {
     archive: {
       numFiles: 0
@@ -44,6 +49,7 @@ module.exports = async function(req) {
     robots,
     authConfig,
     prefs,
-    layout
+    layout,
+    otpConfig
   };
 };

@@ -49,7 +49,8 @@ module.exports = function(state) {
     state.downloadMetadata ? raw(JSON.stringify(state.downloadMetadata)) : '{}'
   };
   ${authConfig};
-  ${sentry}
+  ${sentry};
+  var OTP_CONFIG=${JSON.stringify(state.otpConfig)};
   `;
   return state.cspNonce
     ? html`

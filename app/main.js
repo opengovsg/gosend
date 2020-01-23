@@ -57,7 +57,7 @@ if (process.env.NODE_ENV === 'production') {
     translate,
     storage,
     sentry: Sentry,
-    user: new User(storage, LIMITS, window.AUTH_CONFIG),
+    user: new User(storage, LIMITS, window.AUTH_CONFIG, window.OTP_CONFIG),
     transfer: null,
     fileInfo: null
   };

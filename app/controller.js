@@ -7,6 +7,7 @@ import okDialog from './ui/okDialog';
 import copyDialog from './ui/copyDialog';
 import shareDialog from './ui/shareDialog';
 import signupDialog from './ui/signupDialog';
+import signinDialog from './ui/signinDialog';
 import surveyDialog from './ui/surveyDialog';
 
 export default function(state, emitter) {
@@ -304,6 +305,10 @@ export default function(state, emitter) {
       state.modal = null;
     }
     render();
+  });
+
+  emitter.on('getSignInOtp', email => {
+    state.user.getSignInOtp(email);
   });
 
   setInterval(() => {
