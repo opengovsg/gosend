@@ -7,7 +7,7 @@ services:
     ports:
       - "1443:1443"
     environment:
-      - REDIS_HOST=redis
+      - REDIS_URL=redis
   redis:
     image: redis:alpine
   selenium-firefox:
