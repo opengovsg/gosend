@@ -2,9 +2,12 @@ const assert = require('assert');
 const crypto = require('crypto');
 const storage = require('../storage');
 const fxa = require('../fxa');
-
+const isLoggedIn = (req) => {
+  return req.session && req.session.user && req.session.user.email
+}
 module.exports = {
   hmac: async function(req, res, next) {
+    if(!isLoggedIn(req)) return res.sendStatus(401)
     const id = req.params.id;
     const authHeader = req.header('Authorization');
     if (id && authHeader) {
@@ -41,6 +44,7 @@ module.exports = {
     }
   },
   owner: async function(req, res, next) {
+    if(!isLoggedIn(req)) return res.sendStatus(401)
     const id = req.params.id;
     const ownerToken = req.body.owner_token;
     if (id && ownerToken) {
@@ -65,6 +69,7 @@ module.exports = {
     }
   },
   fxa: async function(req, res, next) {
+    if(!isLoggedIn(req)) return res.sendStatus(401)
     const authHeader = req.header('Authorization');
     if (authHeader && /^Bearer\s/i.test(authHeader)) {
       const token = authHeader.split(' ')[1];
