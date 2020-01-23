@@ -6,7 +6,6 @@ import { bytes, locale } from './utils';
 import okDialog from './ui/okDialog';
 import copyDialog from './ui/copyDialog';
 import shareDialog from './ui/shareDialog';
-import signupDialog from './ui/signupDialog';
 import signinDialog from './ui/signinDialog';
 import surveyDialog from './ui/surveyDialog';
 
@@ -98,9 +97,6 @@ export default function(state, emitter) {
         state.LIMITS.MAX_FILES_PER_ARCHIVE
       );
     } catch (e) {
-      if (e.message === 'fileTooBig' && maxSize < state.LIMITS.MAX_FILE_SIZE) {
-        return emitter.emit('signup-cta', 'size');
-      }
       state.modal = okDialog(
         state.translate(e.message, {
           size: bytes(maxSize),
@@ -108,19 +104,6 @@ export default function(state, emitter) {
         })
       );
     }
-    render();
-  });
-
-  emitter.on('signup-cta', source => {
-    const query = state.query;
-    state.user.startAuthFlow(source, {
-      campaign: query.utm_campaign,
-      content: query.utm_content,
-      medium: query.utm_medium,
-      source: query.utm_source,
-      term: query.utm_term
-    });
-    state.modal = signupDialog(source);
     render();
   });
 

@@ -27,7 +27,6 @@ class Account extends Component {
 
   login(event) {
     event.preventDefault();
-    this.emit('signup-cta', 'button');
   }
 
   logout(event) {
