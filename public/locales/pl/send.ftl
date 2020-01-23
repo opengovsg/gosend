@@ -56,7 +56,7 @@ passwordSetError = Nie można ustawić tego hasła
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Proste, prywatne udostępnianie plików
-introDescription = { -send-brand } umożliwia udostępnianie plików za pomocą szyfrowania typu „end-to-end” i odnośników, które automatycznie wygasają. Dzięki temu możesz mieć pewność, że to co udostępniasz jest bezpieczne i nie pozostanie w Internecie na zawsze.
+introDescription = { -send-go-gov-sg } umożliwia udostępnianie plików za pomocą szyfrowania typu „end-to-end” i odnośników, które automatycznie wygasają. Dzięki temu możesz mieć pewność, że to co udostępniasz jest bezpieczne i nie pozostanie w Internecie na zawsze.
 notifyUploadEncryptDone = Plik jest zaszyfrowany i gotowy do wysłania
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Wygasa po { $downloadCount } lub { $timespan }

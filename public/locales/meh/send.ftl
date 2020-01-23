@@ -53,7 +53,7 @@ passwordSetError = Ntu nkuvi sá´á contraseña
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Kua´a daa archivo ñama jee yu´u
-introDescription = { -send-brand } taji jia´anu archivos jii cifrado uvi nuu jee iin enlace nɨ´ɨ. Sukuan kuvi kumi yu´unu daa archivo jia´anu jee kuninu nkino daa ya´a kue´e kuiya íchi nuu.
+introDescription = { -send-go-gov-sg } taji jia´anu archivos jii cifrado uvi nuu jee iin enlace nɨ´ɨ. Sukuan kuvi kumi yu´unu daa archivo jia´anu jee kuninu nkino daa ya´a kue´e kuiya íchi nuu.
 notifyUploadEncryptDone = Archivo noo´o íyo cifrado jee kuvi chu´un íchi
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Nɨ'ɨ dee nña´a { $downloadCount } a xiin { $timespan }

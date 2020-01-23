@@ -54,7 +54,7 @@ passwordSetError = No s'ha puesto definir la clau
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Compartición de fichers simpla y privada
-introDescription = { -send-brand } te permite de compartir fichers cifraus de cabo a cabo, y tamién un vinclo que expira automaticament. Asinas, puetz mantener en privau lo que compartes y asegurar-te de que los tuyos contenius no se quedan pa cutio en linia.
+introDescription = { -send-go-gov-sg } te permite de compartir fichers cifraus de cabo a cabo, y tamién un vinclo que expira automaticament. Asinas, puetz mantener en privau lo que compartes y asegurar-te de que los tuyos contenius no se quedan pa cutio en linia.
 notifyUploadEncryptDone = Lo fichero s'ha cifrau y ye presto pa ninviar-se
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Caduca dimpués de { $downloadCount } u { $timespan }

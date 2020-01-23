@@ -54,7 +54,7 @@ passwordSetError = Nun pudo afitase esta contraseña
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Compartición de ficheros privada y cenciella
-introDescription = { -send-brand } déxate compartir ficheros con cifráu puntu a puntu y un enllaz que caduca automáticamente. D'esti mou, asegúreste de que lo que compartes ye privao y nun va tar siempres en llinia.
+introDescription = { -send-go-gov-sg } déxate compartir ficheros con cifráu puntu a puntu y un enllaz que caduca automáticamente. D'esti mou, asegúreste de que lo que compartes ye privao y nun va tar siempres en llinia.
 notifyUploadEncryptDone = El ficheru ta cifráu y preparáu pa unviase
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Caduca dempués de { $downloadCount } ó { $timespan }

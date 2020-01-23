@@ -19,7 +19,7 @@ class Promo extends Component {
       >
         <div class="flex items-center mx-auto">
           <img
-            src="${assets.get('master-logo.svg')}"
+            src="${assets.get('go-icon.svg')}"
             class="w-6 h-6"
             alt="Firefox"
           />
@@ -27,8 +27,10 @@ class Promo extends Component {
             ${this.state.translate('trailheadPromo')}${' '}
             <a
               class="underline link-blue"
-              href="http://www.mozilla.org/firefox/accounts/?utm_source=send.firefox.com&utm_medium=banner&utm_campaign=trailhead&utm_content=protect-your-privacy"
-              >${this.state.translate('learnMore')}</a
+              href="https://go.gov.sg/send-feedback"
+              target="_blank"
+              rel="noopener noreferrer"
+              >${this.state.translate('sendFeedback')}</a
             >
           </span>
         </div>

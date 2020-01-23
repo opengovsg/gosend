@@ -74,7 +74,7 @@ passwordSetError = Gesla ni mogoče nastaviti
         [orodnik] Mozillo
     }
 introTitle = Preprosto, zasebno deljenje datotek
-introDescription = { -send-brand } vam omogoča v celoti šifrirano pošiljanje datotek s povezavo, ki samodejno poteče. Z njim lahko zasebno delite svoje datoteke in zagotovite, da ne bodo za vedno ostale na spletu.
+introDescription = { -send-go-gov-sg } vam omogoča v celoti šifrirano pošiljanje datotek s povezavo, ki samodejno poteče. Z njim lahko zasebno delite svoje datoteke in zagotovite, da ne bodo za vedno ostale na spletu.
 notifyUploadEncryptDone = Vaša datoteka je šifrirana in pripravljena za pošiljanje
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Poteče po { $downloadCount } ali čez { $timespan }

@@ -55,7 +55,7 @@ passwordSetError = לא ניתן להגדיר את הססמה הזאת
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = שיתוף קבצים פרטי ופשוט
-introDescription = { -send-brand } מאפשר לך לשתף קבצים עם הצפנה מקצה לקצה וקישור עם תפוגה אוטומטית. בצורה זו תוכלו לשתף קבצים באופן פרטי ולהבטיח שהדברים שלכם לא נשארים ברשת לנצח.
+introDescription = { -send-go-gov-sg } מאפשר לך לשתף קבצים עם הצפנה מקצה לקצה וקישור עם תפוגה אוטומטית. בצורה זו תוכלו לשתף קבצים באופן פרטי ולהבטיח שהדברים שלכם לא נשארים ברשת לנצח.
 notifyUploadEncryptDone = הקובץ שלך מוצפן ומוכן לשליחה
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = יפוג לאחר { $downloadCount } או { $timespan }

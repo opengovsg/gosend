@@ -54,7 +54,7 @@ passwordSetError = Dette passordet kunne ikkje stillast inn
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Enkel, privat fildeling
-introDescription = { -send-brand } lèt deg dele filer via ei tidsavgrensa lenke med ende-til-ende-kryptering. På den måten kan du dele filer privat og samstundes vere trygg på at det ikkje ligg på nettet for alltid.
+introDescription = { -send-go-gov-sg } lèt deg dele filer via ei tidsavgrensa lenke med ende-til-ende-kryptering. På den måten kan du dele filer privat og samstundes vere trygg på at det ikkje ligg på nettet for alltid.
 notifyUploadEncryptDone = Fila di er kryptert og klar til å bli sendt
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Går ut etter { $downloadCount } eller { $timespan }

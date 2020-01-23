@@ -14,8 +14,8 @@ module.exports = function(state, emit){
             />
             <input
               class="btn rounded-lg w-full flex flex-shrink-0 items-center justify-center"
-              value="${state.translate('signInOnlyButton')}"
-              title="${state.translate('signInOnlyButton')}"
+              value="${state.translate('signInGetOTPButton')}"
+              title="${state.translate('signInGetOTPButton')}"
               id="email-submit"
               type="submit"
             />

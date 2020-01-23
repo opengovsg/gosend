@@ -58,7 +58,7 @@ passwordSetError = Toś to gronidło njedajo se nastajiś
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Jadnore, priwatne datajowe źělenje
-introDescription = { -send-brand } wam zmóžnja, dataje z koděrowanim kóńc do kóńca a wótkazom źěliś, kótaryž awtomatiski spadnjo. Tak móžośo źělone wopśimjeśe priwatne źaržaś a zawěsćiś, až waše daty online na pśecej njewóstanu.
+introDescription = { -send-go-gov-sg } wam zmóžnja, dataje z koděrowanim kóńc do kóńca a wótkazom źěliś, kótaryž awtomatiski spadnjo. Tak móžośo źělone wopśimjeśe priwatne źaržaś a zawěsćiś, až waše daty online na pśecej njewóstanu.
 notifyUploadEncryptDone = Waša dataja jo skoděrowana za słanje
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Spadnjo pó { $downloadCount } abo { $timespan }

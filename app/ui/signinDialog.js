@@ -13,7 +13,7 @@ module.exports = function() {
       <send-signup-dialog
         class="flex flex-col lg:flex-row justify-center px-8 md:px-24 w-full h-full"
       >
-        <img src="${assets.get('master-logo.svg')}" class="h-16 mt-1 mb-4" />
+        <img src="${assets.get('go-icon.svg')}" class="h-16 mt-1 mb-4" />
         <section
           class="flex flex-col flex-shrink-0 self-center lg:mx-6 lg:max-w-xs"
         >
@@ -23,17 +23,11 @@ module.exports = function() {
           <ul
             class="leading-normal list-disc text-grey-80 my-2 mt-4 pl-4 md:self-center dark:text-grey-40"
           >
-            <li>
-              ${state.translate('accountBenefitLargeFiles', {
-                size: bytes(state.LIMITS.MAX_FILE_SIZE)
-              })}
-            </li>
             <li>${state.translate('accountBenefitDownloadCount')}</li>
             <li>
               ${state.translate('accountBenefitTimeLimit', { count: DAYS })}
             </li>
-            <li>${state.translate('accountBenefitSync')}</li>
-            <li>${state.translate('accountBenefitMoz')}</li>
+            <li>${state.translate('upcomingFeatureTitle')} ${state.translate('upcomingFeature1')}</li>
           </ul>
         </section>
         <section

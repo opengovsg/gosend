@@ -52,7 +52,7 @@ passwordSetError = Không thể đặt mật khẩu này
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Chia sẻ tập tin đơn giản, riêng tư
-introDescription = { -send-brand } cho phép bạn chia sẻ các tập tin với mã hóa đầu cuối và một liên kết tự động hết hạn. Vì vậy, bạn có thể giữ những gì bạn chia sẻ riêng tư và đảm bảo dữ liệu của bạn không trực tuyến vĩnh viễn.
+introDescription = { -send-go-gov-sg } cho phép bạn chia sẻ các tập tin với mã hóa đầu cuối và một liên kết tự động hết hạn. Vì vậy, bạn có thể giữ những gì bạn chia sẻ riêng tư và đảm bảo dữ liệu của bạn không trực tuyến vĩnh viễn.
 notifyUploadEncryptDone = Tập tin của bạn được mã hóa và sẵn sàng để gửi
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Hết hạn sau { $downloadCount } hoặc { $timespan }

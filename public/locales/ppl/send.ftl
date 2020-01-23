@@ -54,7 +54,7 @@ passwordSetError = Te welit tiktaliat ini taketzalis ichtaka.
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Te uij wan ichtaka tikmajmaka se tajkwilul.
-introDescription = { -send-brand } metzpalewia tiktakulia se tajkwilul iwan ichtakatajkwilulis wan se ilpika ka puliwi nemanha. Ijkiuni nemi ichtaka tay tikmajmaka wan tesu naka senpa tik matapan tay mupal.
+introDescription = { -send-go-gov-sg } metzpalewia tiktakulia se tajkwilul iwan ichtakatajkwilulis wan se ilpika ka puliwi nemanha. Ijkiuni nemi ichtaka tay tikmajmaka wan tesu naka senpa tik matapan tay mupal.
 notifyUploadEncryptDone = Ne mutajkwilul nemi ichtakatajkwilujtuk wan weli tiktitania
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Puliwi kwak tikajsi { $downloadCount } ush { $timespan }

@@ -58,7 +58,7 @@ passwordSetError = Tute hesło njeda so nastajić
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Jednore, priwatne datajowe dźělenje
-introDescription = { -send-brand } wam zmóžnja, dataje ze zaklučowanjom kónc do kónca a wotkazom dźělić, kotryž awtomatisce spadnje. Tak móžeće dźěleny wobsah priwatny dźeržeć a zawěsćić, zo waše daty online na přeco njewóstanu.
+introDescription = { -send-go-gov-sg } wam zmóžnja, dataje ze zaklučowanjom kónc do kónca a wotkazom dźělić, kotryž awtomatisce spadnje. Tak móžeće dźěleny wobsah priwatny dźeržeć a zawěsćić, zo waše daty online na přeco njewóstanu.
 notifyUploadEncryptDone = Waša dataja je zaklučowana a hotowa za słanje
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Spadnje po { $downloadCount } abo { $timespan }

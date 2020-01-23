@@ -54,7 +54,7 @@ passwordSetError = ਇਹ ਪਾਸਵਰਡ ਸੈੱਟ ਨਹੀਂ ਕੀਤ
 -firefox = ਫਾਇਰਫਾਕਸ
 -mozilla = ਮੋਜ਼ੀਲਾ
 introTitle = ਸੌਖਾ, ਪ੍ਰਾਈਵੇਟ ਫਾਇਲ ਸਾਂਝਾ ਕਰਨਾ
-introDescription = { -send-brand } ਤੁਹਾਨੂੰ ਸਿਰੇ-ਤੋਂ-ਸਿਰੇ ਤੱਕ ਇੰਕ੍ਰਿਪਸ਼ਨ ਨਾਲ ਫਾਇਲਾਂ ਸਾਂਝੀਆਂ ਕਰਨ ਦਿੰਦਾ ਹੈ ਅਤੇ ਲਿੰਕ ਦੀ ਮਿਆਦ ਆਪਣੇ ਆਪ ਪੁੱਗ ਜਾਂਦੀ ਹੈ। ਇਸ ਕਰਕੇ ਤੁਸੀਂ ਤੁਹਾਡੇ ਵਲੋਂ ਸਾਂਝੇ ਕੀਤੇ ਨੂੰ ਨਿੱਜੀ ਬਣਾਈ ਰੱਖਦੇ ਹੋ ਅਤੇ ਪੱਕਾ ਕਰਦੇ ਹੋ ਕਿ ਤੁਹਾਡਾ ਸਾਮਾਨ ਹਮੇਸ਼ਾਂ ਆਨਲਾਈਨ ਨਹੀਂ ਰਹਿੰਦਾ ਹੈ।
+introDescription = { -send-go-gov-sg } ਤੁਹਾਨੂੰ ਸਿਰੇ-ਤੋਂ-ਸਿਰੇ ਤੱਕ ਇੰਕ੍ਰਿਪਸ਼ਨ ਨਾਲ ਫਾਇਲਾਂ ਸਾਂਝੀਆਂ ਕਰਨ ਦਿੰਦਾ ਹੈ ਅਤੇ ਲਿੰਕ ਦੀ ਮਿਆਦ ਆਪਣੇ ਆਪ ਪੁੱਗ ਜਾਂਦੀ ਹੈ। ਇਸ ਕਰਕੇ ਤੁਸੀਂ ਤੁਹਾਡੇ ਵਲੋਂ ਸਾਂਝੇ ਕੀਤੇ ਨੂੰ ਨਿੱਜੀ ਬਣਾਈ ਰੱਖਦੇ ਹੋ ਅਤੇ ਪੱਕਾ ਕਰਦੇ ਹੋ ਕਿ ਤੁਹਾਡਾ ਸਾਮਾਨ ਹਮੇਸ਼ਾਂ ਆਨਲਾਈਨ ਨਹੀਂ ਰਹਿੰਦਾ ਹੈ।
 notifyUploadEncryptDone = ਤੁਹਾਡਾ ਫਾਇਲ ਇੰਕ੍ਰਿਪਟ ਕੀਤੀ ਗਈ ਤੇ ਭੇਜਣ ਲਈ ਤਿਆਰ ਹੈ
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = { $downloadCount } ਜਾਂ { $timespan } ਦੇ ਬਾਅਦ ਮਿਆਦ ਪੁੱਗਦੀ ਹੈ

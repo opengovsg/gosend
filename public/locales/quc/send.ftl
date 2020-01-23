@@ -54,7 +54,7 @@ passwordSetError = Man kkowimb'ex ta ujeqeb'axik le retokib'al
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Man k'ax taj, ukomonexik taq kemk'olib'al pa echeb'alil
-introDescription = { -send-brand } kuya' bé chi awech kakomonej taq kemk'olib'al ruk' wiqitajem chi'l jun kemwiqb'al le kq'ax uq'ijol pa utukelam. Are chi man katzaq ta le kakomone'j pa echeb'alil chi'l chasuk'ub'a' rilik chi le taq ajastaq man kk'oji' ta pa nimk'atz pa junelik.
+introDescription = { -send-go-gov-sg } kuya' bé chi awech kakomonej taq kemk'olib'al ruk' wiqitajem chi'l jun kemwiqb'al le kq'ax uq'ijol pa utukelam. Are chi man katzaq ta le kakomone'j pa echeb'alil chi'l chasuk'ub'a' rilik chi le taq ajastaq man kk'oji' ta pa nimk'atz pa junelik.
 notifyUploadEncryptDone = Le akemk'olib'al wiqitalik chi'l utz chi kataqo
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Kq'ax uq'ijol chi rij { $downloadCount } on { $timespan }

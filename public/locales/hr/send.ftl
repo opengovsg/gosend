@@ -56,7 +56,7 @@ passwordSetError = Lozinku nije moguće postaviti
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Jednostavno i privatno dijeljenje datoteka
-introDescription = { -send-brand } vam omogućava dijeljenje datoteka s kriptiranjem i poveznicu koja automatski ističe. Ovim putem stvari koje dijelite ostaju privatne i osiguravate se da ne ostaju zauvijek dostupne na Internetu.
+introDescription = { -send-go-gov-sg } vam omogućava dijeljenje datoteka s kriptiranjem i poveznicu koja automatski ističe. Ovim putem stvari koje dijelite ostaju privatne i osiguravate se da ne ostaju zauvijek dostupne na Internetu.
 notifyUploadEncryptDone = Vaša datoteka je kriptirana i spremna za slanje.
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Istječe nakon { $downloadCount } ili { $timespan }

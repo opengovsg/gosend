@@ -54,7 +54,7 @@ passwordSetError = No se pudo establecer la contraseña
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Intercambio de archivos sencillo y privado
-introDescription = { -send-brand } le permite compartir archivos con cifrado de extremo a extremo y un enlace que caduca automáticamente. Así puede mantener privado lo que comparte y asegurarse de que sus cosas no permanezcan en línea para siempre.
+introDescription = { -send-go-gov-sg } le permite compartir archivos con cifrado de extremo a extremo y un enlace que caduca automáticamente. Así puede mantener privado lo que comparte y asegurarse de que sus cosas no permanezcan en línea para siempre.
 notifyUploadEncryptDone = Su archivo está cifrado y listo para enviar
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Vence después de { $downloadCount } o { $timespan }

@@ -54,7 +54,7 @@ passwordSetError = Iste contrasigno non ha potite esser establite
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Comparti file in maniera confidential
-introDescription = { -send-brand } te pone in grado de compartir files con cryptographia bilateral e un ligamine que automaticamente expira. Assi que tu pote mantener private lo que tu comparti e liberar te del anxietate que tu problema resta online per sempre.
+introDescription = { -send-go-gov-sg } te pone in grado de compartir files con cryptographia bilateral e un ligamine que automaticamente expira. Assi que tu pote mantener private lo que tu comparti e liberar te del anxietate que tu problema resta online per sempre.
 notifyUploadEncryptDone = Tu file es cryptate e preste pro esser inviate
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Expira post { $downloadCount } o { $timespan }

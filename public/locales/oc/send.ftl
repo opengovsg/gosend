@@ -54,7 +54,7 @@ passwordSetError = Aqueste senhal a pas pogut èsser definit
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Partatge simple e privat de fichièrs
-introDescription = { -send-brand } vos permet de partejar de fichièr amb un chiframent del cap a la fin e un ligam qu’expira automaticament. Atal podètz gardar  privat çò que partejatz e vos assegurar que demorarà pas en linha per totjorn.
+introDescription = { -send-go-gov-sg } vos permet de partejar de fichièr amb un chiframent del cap a la fin e un ligam qu’expira automaticament. Atal podètz gardar  privat çò que partejatz e vos assegurar que demorarà pas en linha per totjorn.
 notifyUploadEncryptDone = Vòstre fichièr es chifrat e prèst per mandadís
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Expira aprèp { $downloadCount } o { $timespan }

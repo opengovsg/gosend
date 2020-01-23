@@ -54,7 +54,7 @@ passwordSetError = Tätä salasanaa ei voitu asettaa
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Helppoa ja yksityistä tiedostonjakoa
-introDescription = { -send-brand } mahdollistaa tiedostojen jakamisen automaattisesti vanhenevalla linkillä. Tiedostojen jakaminen tapahtuu päästä päähän -salattuna. Näin jakamasi tiedostot pysyvät yksityisinä ja voit olla varma, etteivät lähettämäsi tiedostot pysy verkossa ikuisesti.
+introDescription = { -send-go-gov-sg } mahdollistaa tiedostojen jakamisen automaattisesti vanhenevalla linkillä. Tiedostojen jakaminen tapahtuu päästä päähän -salattuna. Näin jakamasi tiedostot pysyvät yksityisinä ja voit olla varma, etteivät lähettämäsi tiedostot pysy verkossa ikuisesti.
 notifyUploadEncryptDone = Tiedosto on salattu ja valmis lähetettäväksi
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Vanhenee { $downloadCount } tai { $timespan } jälkeen

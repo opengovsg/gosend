@@ -21,21 +21,14 @@ class Header extends Component {
       platform() === 'android'
         ? html`
             <a class="flex flex-row items-center">
-              <img src="${assets.get('icon.svg')}" />
-              <svg class="w-48">
-                <use xlink:href="${assets.get('wordmark.svg')}#logo" />
-              </svg>
+            
+             <img src="${assets.get('go-homepage-logo.png')}">
             </a>
           `
         : html`
             <a class="flex flex-row items-center" href="/">
-              <img
-                alt="${this.state.translate('title')}"
-                src="${assets.get('icon.svg')}"
-              />
-              <svg class="w-48 md:w-64">
-                <use xlink:href="${assets.get('wordmark.svg')}#logo" />
-              </svg>
+             
+              <img src="${assets.get('go-homepage-logo.png')}">
             </a>
           `;
     return html`

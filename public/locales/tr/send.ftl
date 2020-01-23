@@ -50,7 +50,7 @@ passwordSetError = Parola ayarlanamadı
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Basit ve gizli dosya paylaşımı
-introDescription = { -send-brand } ile dosyalarınızı uçtan uca şifreleme ve otomatik olarak silinen bir bağlantıyla paylaşın. Böylece özel dosyalarınız güvenle saklanır, bir süre sonra kendi kendine silinir.
+introDescription = { -send-go-gov-sg } ile dosyalarınızı uçtan uca şifreleme ve otomatik olarak silinen bir bağlantıyla paylaşın. Böylece özel dosyalarınız güvenle saklanır, bir süre sonra kendi kendine silinir.
 notifyUploadEncryptDone = Dosyanız şifrelendi ve gönderilmeye hazır
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = { $downloadCount } veya { $timespan } sonra silinecek

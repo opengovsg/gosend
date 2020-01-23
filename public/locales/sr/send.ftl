@@ -56,7 +56,7 @@ passwordSetError = Не можемо поставити ову лозинку
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Једноставно и приватно дељење датотека
-introDescription = { -send-brand } вам дозвољава да делите датотеке које су шифроване с краја на крај преко везе која самостално истиче. Тако да можете приватно делити ваше ствари које неће остати на вебу заувек.
+introDescription = { -send-go-gov-sg } вам дозвољава да делите датотеке које су шифроване с краја на крај преко везе која самостално истиче. Тако да можете приватно делити ваше ствари које неће остати на вебу заувек.
 notifyUploadEncryptDone = Ваша датотека је шифрована и спремна за слање
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Истиче након { $downloadCount } или { $timespan }

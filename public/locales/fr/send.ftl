@@ -54,7 +54,7 @@ passwordSetError = Ce mot de passe n’a pas pu être défini
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Partage de fichiers simple et privé
-introDescription = { -send-brand } vous permet de partager des fichiers chiffrés de bout en bout ainsi qu’un lien qui expire automatiquement. Ainsi, vous pouvez garder ce que vous partagez en privé et vous assurer que vos contenus ne restent pas en ligne pour toujours.
+introDescription = { -send-go-gov-sg } vous permet de partager des fichiers chiffrés de bout en bout ainsi qu’un lien qui expire automatiquement. Ainsi, vous pouvez garder ce que vous partagez en privé et vous assurer que vos contenus ne restent pas en ligne pour toujours.
 notifyUploadEncryptDone = Votre fichier est chiffré et prêt à l’envoi
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Expire après { $downloadCount } ou { $timespan }

@@ -54,7 +54,7 @@ passwordSetError = Ky fjalëkalim s’u caktua dot
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Ndarje e thjeshtë, private, kartelash me të tjerët
-introDescription = { -send-brand } ju lejon të ndani kartela me të tjerët, me fshehtëzim skaj-më-skaj dhe me një lidhje që skadon automatikisht. Kështu mund ta mbani private atë që ndani me të tjerë dhe të garantoni që gjërat tuaja s’do të qëndrojnë në linjë përgjithmonë.
+introDescription = { -send-go-gov-sg } ju lejon të ndani kartela me të tjerët, me fshehtëzim skaj-më-skaj dhe me një lidhje që skadon automatikisht. Kështu mund ta mbani private atë që ndani me të tjerë dhe të garantoni që gjërat tuaja s’do të qëndrojnë në linjë përgjithmonë.
 notifyUploadEncryptDone = Kartela juaj është fshehtëzuar dhe gati për dërgim
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Skadon pas { $downloadCount } ose { $timespan }

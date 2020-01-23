@@ -54,7 +54,7 @@ passwordSetError = Parooli muutmine ebaõnnestus
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Lihtne ja privaatne failijagamine
-introDescription = { -send-brand } võimaldab sul faile jagada otspunktkrüpteerimise ning automaatselt aeguva lingiga. Nii saad jagatava privaatsena hoida ja kindlustada, et su asjad igavesti internetti vedelema ei jää.
+introDescription = { -send-go-gov-sg } võimaldab sul faile jagada otspunktkrüpteerimise ning automaatselt aeguva lingiga. Nii saad jagatava privaatsena hoida ja kindlustada, et su asjad igavesti internetti vedelema ei jää.
 notifyUploadEncryptDone = Sinu fail on krüptitud ja saatmiseks valmis
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Aegub peale { $downloadCount } või { $timespan } järel

@@ -52,7 +52,7 @@ passwordSetError = Tidak bisa menyetel sandi ini
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Berbagi berkas dengan mudah dan privat
-introDescription = { -send-brand } mudahkan Anda membagikan berkas dengan enkripsi ujung-ke-ujung dan tautan yang otomatis kadaluarsa. Sehingga Anda dapat menjaga apa yang Anda bagikan secara privat dan memastikan barang Anda tidak selamanya ada di daring.
+introDescription = { -send-go-gov-sg } mudahkan Anda membagikan berkas dengan enkripsi ujung-ke-ujung dan tautan yang otomatis kadaluarsa. Sehingga Anda dapat menjaga apa yang Anda bagikan secara privat dan memastikan barang Anda tidak selamanya ada di daring.
 notifyUploadEncryptDone = Berkas Anda terenkripsi dan siap untuk dikirim
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Berakhir setelah { $downloadCount } atau { $timespan }

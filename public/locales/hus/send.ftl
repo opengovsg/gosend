@@ -52,7 +52,7 @@ passwordSetError = Axi tsinat japixtaláb yab u awil ka eyendha'
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Yab k'ibat, a tsinat t'ojlabil u awil ka buk'uw
-introDescription = { -send-brand } in t'ajál abal ka buk'uw a t'ojlabil po axé' tsinat abal an atikláb axi tat yab a le' kin tsu'uw yab kin ejtow, aniyej an enlace abal ka pa'ba' an t'ojláb u talél kwetém. Antsan patal axi ka abna' u awil ka buk'uw tsinat ani antsan jayej axi ka buk'uw yab u jilk'onal ets'ey ti ébtsolom (internet).
+introDescription = { -send-go-gov-sg } in t'ajál abal ka buk'uw a t'ojlabil po axé' tsinat abal an atikláb axi tat yab a le' kin tsu'uw yab kin ejtow, aniyej an enlace abal ka pa'ba' an t'ojláb u talél kwetém. Antsan patal axi ka abna' u awil ka buk'uw tsinat ani antsan jayej axi ka buk'uw yab u jilk'onal ets'ey ti ébtsolom (internet).
 notifyUploadEncryptDone = A t'ojlabil xo' tsinadhits ani u awilits ka abna'
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Ne'ets ka taliy ti { $downloadCount } o ti { $timespan }

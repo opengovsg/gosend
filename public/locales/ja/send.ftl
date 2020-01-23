@@ -52,7 +52,7 @@ passwordSetError = このパスワードは設定できませんでした
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = 簡単に、プライベートにファイル共有
-introDescription = { -send-brand } では、暗号化してファイル共有でき、リンクは自動的に期限切れになります。そのため、共有するものをプライベートに保管でき、オンライン上に永遠に残さないようにできます。
+introDescription = { -send-go-gov-sg } では、暗号化してファイル共有でき、リンクは自動的に期限切れになります。そのため、共有するものをプライベートに保管でき、オンライン上に永遠に残さないようにできます。
 notifyUploadEncryptDone = ファイルが暗号化され、送信する準備ができました
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = 有効期間: { $downloadCount } または { $timespan }

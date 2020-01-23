@@ -46,7 +46,7 @@ passwordSetError = 이 비밀번호를 설정할 수 없었습니다
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = 간단하고, 사생활을 보호하는 파일 공유
-introDescription = { -send-brand }를 사용하면 종단 암호화와 자동으로 만료되는 링크를 사용해 파일을 공유할 수 있습니다. 안전하게 공유할 수 있고 공유된 파일이 계속 온라인에 남지 않게 됩니다.
+introDescription = { -send-go-gov-sg }를 사용하면 종단 암호화와 자동으로 만료되는 링크를 사용해 파일을 공유할 수 있습니다. 안전하게 공유할 수 있고 공유된 파일이 계속 온라인에 남지 않게 됩니다.
 notifyUploadEncryptDone = 파일이 암호화 되어서 보낼 수 있게 됐습니다
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = { $downloadCount } 혹은 { $timespan } 후 만료됨

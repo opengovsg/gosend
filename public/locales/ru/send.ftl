@@ -56,7 +56,7 @@ passwordSetError = Этот пароль не может быть установ
 -firefox = Firefox
 -mozilla = Mozilla
 introTitle = Простой и безопасный обмен файлами
-introDescription = { -send-brand } позволяет вам делиться файлами со сквозным шифрованием и ограниченным сроком действия ссылки на загрузку. Так что, вы сможете делиться файлами приватно и они не останутся в сети навсегда.
+introDescription = { -send-go-gov-sg } позволяет вам делиться файлами со сквозным шифрованием и ограниченным сроком действия ссылки на загрузку. Так что, вы сможете делиться файлами приватно и они не останутся в сети навсегда.
 notifyUploadEncryptDone = Ваш файл зашифрован и готов к отправке
 # downloadCount is from the downloadCount string and timespan is a timespanMinutes string. ex. 'Expires after 2 downloads or 25 minutes'
 archiveExpiryInfo = Срок хранения истекает после { $downloadCount } или через { $timespan }
