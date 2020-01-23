@@ -3,13 +3,16 @@ const crypto = require('crypto');
 const storage = require('../storage');
 const fxa = require('../fxa');
 const validator = require('validator')
-const isLoggedIn = (req) => {
+const isSignedInWithOtp = (req) => {
   if(req.session && req.session.user && req.session.user.email){
     return validator.isEmail(req.session.user.email) && req.session.user.email.endsWith('.gov.sg')
   }
   return false
 }
 module.exports = {
+  isSignedInWithOtp: async function(req, res) {
+    return isSignedInWithOtp(req) ? res.sendStatus(200) : res.sendStatus(401)
+  },
   hmac: async function(req, res, next) {
     const id = req.params.id;
     const authHeader = req.header('Authorization');
@@ -47,7 +50,7 @@ module.exports = {
     }
   },
   owner: async function(req, res, next) {
-    if(!isLoggedIn(req)) return res.sendStatus(401)
+    if(!isSignedInWithOtp(req)) return res.sendStatus(401)
     const id = req.params.id;
     const ownerToken = req.body.owner_token;
     if (id && ownerToken) {
@@ -72,7 +75,7 @@ module.exports = {
     }
   },
   fxa: async function(req, res, next) {
-    if(!isLoggedIn(req)) return res.sendStatus(401)
+    if(!isSignedInWithOtp(req)) return res.sendStatus(401)
     const authHeader = req.header('Authorization');
     if (authHeader && /^Bearer\s/i.test(authHeader)) {
       const token = authHeader.split(' ')[1];

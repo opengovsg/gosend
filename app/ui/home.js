@@ -3,8 +3,8 @@ const { list } = require('../utils');
 const archiveTile = require('./archiveTile');
 const modal = require('./modal');
 const intro = require('./intro');
-
 module.exports = function(state, emit) {
+  emit('isSignedInWithOtp')
   const archives = state.storage.files
     .filter(archive => !archive.expired)
     .map(archive => archiveTile(state, emit, archive));

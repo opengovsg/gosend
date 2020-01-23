@@ -300,6 +300,15 @@ export default function(state, emitter) {
    
   });
 
+  emitter.on('isSignedInWithOtp', async() =>{
+    const isSignedInWithOtp = await state.user.isSignedInWithOtp()
+    if(!isSignedInWithOtp){
+      emitter.emit('pushState','/login')
+    } else{
+      return
+    }
+  })
+
   setInterval(() => {
     // poll for updates of the upload list
     if (!state.modal && state.route === '/') {

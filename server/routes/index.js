@@ -84,6 +84,7 @@ module.exports = function(app) {
   app.get('/oauth', language, pages.blank);
   app.get('/legal', language, pages.legal);
   app.get('/login', language, pages.index);
+  app.get('/upload', language, pages.index);
   app.get('/app.webmanifest', language, require('./webmanifest'));
   app.get(`/download/:id${ID_REGEX}`, language, pages.download);
   app.get('/unsupported/:reason', language, pages.unsupported);
@@ -110,6 +111,7 @@ module.exports = function(app) {
   app.post('/api/metrics', require('./metrics'));
   app.post('/api/getOtp', require('./getOtp'));
   app.post('/api/verifyOtp', require('./verifyOtp'));
+  app.get('/api/isSignedInWithOtp', auth.isSignedInWithOtp);
   app.get('/__version__', function(req, res) {
     // eslint-disable-next-line node/no-missing-require
     res.sendFile(require.resolve('../../dist/version.json'));

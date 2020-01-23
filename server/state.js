@@ -26,7 +26,8 @@ module.exports = async function(req) {
 
   const otpConfig = {
     get_endpoint : '/api/getOtp',
-    verify_endpoint: '/api/verifyOtp'
+    verify_endpoint: '/api/verifyOtp',
+    done_endpoint: '/api/isSignedInWithOtp'
   }
   return {
     archive: {

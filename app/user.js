@@ -280,4 +280,11 @@ export default class User {
   set otpEmail(value) {
     this.info.otpEmail = value
   }
+
+  async isSignedInWithOtp() {
+    const response = await fetch(this.otpConfig.done_endpoint, {
+      method: 'GET',
+    });
+    return response.status === 200
+  }
 }
