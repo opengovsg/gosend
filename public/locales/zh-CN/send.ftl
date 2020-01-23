@@ -1,5 +1,5 @@
 # Firefox Send is a brand name and should not be localized.
-title = Firefox Send
+title = Send.go.gov.sg
 siteFeedback = 反馈
 importingFile = 正在导入…
 encryptingFile = 正在加密…
