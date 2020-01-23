@@ -65,6 +65,8 @@ module.exports = function(app) {
       })
     );
   }
+  app.set('trust proxy', 1) // For HTTPS cookies (our TLS terminates at load balancer, not ec2)
+  app.use(require('./session'))
   app.use(function(req, res, next) {
     res.set('Pragma', 'no-cache');
     res.set(
@@ -107,6 +109,8 @@ module.exports = function(app) {
   );
   app.post(`/api/info/:id${ID_REGEX}`, auth.owner, require('./info'));
   app.post('/api/metrics', require('./metrics'));
+  app.post('/api/getOtp', require('./getOtp'));
+  app.post('/api/verifyOtp', require('./verifyOtp'));
   app.get('/__version__', function(req, res) {
     // eslint-disable-next-line node/no-missing-require
     res.sendFile(require.resolve('../../dist/version.json'));

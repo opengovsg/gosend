@@ -154,7 +154,12 @@ const conf = convict({
     format: String,
     default: '',
     env: 'IP_DB'
-  }
+  },
+  session_secret: {
+    format: String,
+    default: null,
+    env: 'SESSION_SECRET'
+  },
 });
 
 // Perform validation

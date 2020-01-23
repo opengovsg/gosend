@@ -2,8 +2,12 @@ const assert = require('assert');
 const crypto = require('crypto');
 const storage = require('../storage');
 const fxa = require('../fxa');
+const validator = require('validator')
 const isLoggedIn = (req) => {
-  return req.session && req.session.user && req.session.user.email
+  if(req.session && req.session.user && req.session.user.email){
+    return validator.isEmail(req.session.user.email) && req.session.user.email.endsWith('.gov.sg')
+  }
+  return false
 }
 module.exports = {
   hmac: async function(req, res, next) {
