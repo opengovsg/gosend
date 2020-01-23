@@ -157,8 +157,28 @@ const conf = convict({
   },
   session_secret: {
     format: String,
-    default: null,
+    default: '',
     env: 'SESSION_SECRET'
+  },
+  mail_host: {
+    format: String,
+    default: '',
+    env: 'SES_HOST'
+  },
+  mail_port: {
+    format: String,
+    default: '',
+    env: 'SES_PORT'
+  },
+  mail_user: {
+    format: String,
+    default: '',
+    env: 'SES_USER'
+  },
+  mail_pass: {
+    format: String,
+    default: '',
+    env: 'SES_PASS'
   },
 });
 
