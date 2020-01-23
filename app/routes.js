@@ -3,7 +3,7 @@ const download = require('./ui/download');
 const body = require('./ui/body');
 
 module.exports = function(app = choo({ hash: true })) {
-  app.route('/', body(require('./ui/home')));
+  app.route('/', body(require('./ui/homeSignin')));
   app.route('/download/:id', body(download));
   app.route('/download/:id/:key', body(download));
   app.route('/unsupported/:reason', body(require('./ui/unsupported')));

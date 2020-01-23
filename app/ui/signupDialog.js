@@ -1,9 +1,8 @@
 const html = require('choo/html');
 const assets = require('../../common/assets');
 const { bytes, platform } = require('../utils');
-const { canceledSignup, submittedSignup } = require('../metrics');
 
-module.exports = function(trigger) {
+module.exports = function() {
   return function(state, emit, close) {
     const DAYS = Math.floor(state.LIMITS.MAX_EXPIRE_SECONDS / 86400);
     const hidden = platform() === 'android' ? 'hidden' : '';
@@ -74,7 +73,6 @@ module.exports = function(trigger) {
     }
 
     function cancel(event) {
-      canceledSignup({ trigger });
       close(event);
     }
 
@@ -87,7 +85,6 @@ module.exports = function(trigger) {
 
       const el = document.getElementById('email-input');
       const email = el.value;
-      submittedSignup({ trigger });
       emit('login', emailish(email) ? email : null);
     }
   };
