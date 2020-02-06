@@ -1,0 +1,27 @@
+language: node_js
+
+node_js:
+  - 10
+
+services:
+  - docker
+
+cache:
+  directories:
+    - 'node_modules'
+
+script:
+  - npm run echo
+
+# Directly rely on presence of Dockerfile to deploy
+deploy:
+  - provider: elasticbeanstalk
+    skip_cleanup: true
+    access_key_id: $AWS_ACCESS_KEY_ID
+    secret_access_key: $AWS_SECRET_ACCESS_KEY
+    region: "ap-southeast-1"
+    app: "go-send"
+    env: "go-send"
+    bucket_name: "elasticbeanstalk-ap-southeast-1-116366738264"
+    on:
+      branch: $STAGING_BRANCH

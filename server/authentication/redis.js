@@ -5,7 +5,7 @@ if (!config.redis_host || !config.redis_host.startsWith('redis://')) {
     process.exit(1)
 }
 
-const sessionClient = redis.createClient({ url: config.redis_host + "/1" })
+const sessionClient = redis.createClient({ url: config.redis_host + "/15" })
     .on('connect', () => {
         console.info('sessionClient: Connected')
     })
@@ -14,7 +14,7 @@ const sessionClient = redis.createClient({ url: config.redis_host + "/1" })
     })
 
 
-const otpClient = redis.createClient({ url: config.redis_host + "/2" })
+const otpClient = redis.createClient({ url: config.redis_host + "/16" })
     .on('connect', () => {
         console.info('otpClient: Connected')
     })
