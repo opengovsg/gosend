@@ -55,6 +55,6 @@ RUN ln -s dist/version.json version.json
 
 ENV PORT=1443
 
-EXPOSE ${PORT}
+EXPOSE 1443
 
 CMD ["node", "server/bin/prod.js"]
