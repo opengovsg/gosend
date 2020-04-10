@@ -18,11 +18,6 @@ class Promo extends Component {
         class="w-full flex-row items-center content-center justify-center bg-white text-grey-80 px-4 py-3 flex border-b border-grey-banner leading-normal dark:bg-grey-90 dark:text-grey-20 dark:border-grey-80"
       >
         <div class="flex items-center mx-auto">
-          <img
-            src="${assets.get('go-icon.svg')}"
-            class="w-6 h-6"
-            alt="Firefox"
-          />
           <span class="ml-2 sm:ml-4 text-xs sm:text-base">
             ${this.state.translate('trailheadPromo')}${' '}
             <a

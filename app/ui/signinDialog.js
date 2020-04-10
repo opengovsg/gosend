@@ -1,19 +1,15 @@
 const html = require('choo/html');
-const assets = require('../../common/assets');
-const { bytes } = require('../utils');
-const validator = require('validator')
 const getOtpForm = require('./getOtpForm')
 const verifyOtpForm = require('./verifyOtpForm')
 module.exports = function() {
   return function(state, emit, close) {
     const DAYS = Math.floor(state.LIMITS.MAX_EXPIRE_SECONDS / 86400);
     const form = state.user.otpEmail !== '' ? verifyOtpForm(state, emit) : getOtpForm(state, emit)
-    let submitting = false;
     return html`
       <send-signup-dialog
         class="flex flex-col lg:flex-row justify-center px-8 md:px-24 w-full h-full"
       >
-        <img src="${assets.get('go-icon.svg')}" class="h-16 mt-1 mb-4" />
+        <a href="/" class="h-24 w-24 mt-1 mb-4 signin-icon go-icon"></a>
         <section
           class="flex flex-col flex-shrink-0 self-center lg:mx-6 lg:max-w-xs"
         >
@@ -38,27 +34,5 @@ module.exports = function() {
       </send-signup-dialog>
     `;
 
-    function isGovEmail(str) {
-      if (!str) {
-        return false;
-      }
-      return validator.isEmail(str) && str.endsWith('.gov.sg')
-    }
-
-    function cancel(event) {
-      close(event);
-    }
-
-    function submitEmail(event) {
-      event.preventDefault();
-      if (submitting) {
-        return;
-      }
-      submitting = true;
-
-      const el = document.getElementById('email-input');
-      const email = el.value;
-      emit('getSignInOtp', isGovEmail(email) ? email : null);
-    }
   };
 };

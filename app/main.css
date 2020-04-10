@@ -178,9 +178,14 @@ footer li:hover {
 .main {
   display: flex;
   position: relative;
-  max-width: 64rem;
-  width: 100%;
-  height: 100%;
+  @apply flex-1;
+  @apply self-center;
+  @apply m-auto;
+  @apply py-8;
+
+  min-height: 36rem;
+  max-height: 42rem;
+  width: calc(100% - 3rem);
 }
 
 .main > section {
@@ -198,6 +203,29 @@ footer li:hover {
   height: 32px;
   width: 100px;
   flex-shrink: 0;
+}
+
+.homepage-logo{
+  background-image: url('../assets/go-logo-dark.png');
+  background-repeat: no-repeat;
+  background-size: 195px, 63px;
+  height: 63px;
+  width: 195px;
+}
+
+.signin-icon {
+  display: none;
+}
+
+.go-icon {
+  background-image: url('../assets/go-icon-dark.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (prefers-color-scheme: light) {
+  .homepage-logo  { background-image: url('../assets/go-logo-light.png'); } 
+  .go-icon { background-image: url('../assets/go-icon-light.svg'); }
 }
 
 #password-msg::after {
@@ -289,16 +317,10 @@ select {
     margin-right: -7rem;
   }
 
-  .main {
-    @apply flex-1;
-    @apply self-center;
-    @apply items-center;
-    @apply m-auto;
-    @apply py-8;
-
-    min-height: 36rem;
-    max-height: 42rem;
-    width: calc(100% - 3rem);
+  .signin-icon{
+    position: relative;
+    display: flex;
+    align-self: center;
   }
 }
 

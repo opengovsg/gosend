@@ -1,9 +1,6 @@
 const html = require('choo/html');
 const Component = require('choo/component');
 const Account = require('./account');
-const assets = require('../../common/assets');
-const { platform } = require('../utils');
-
 class Header extends Component {
   constructor(name, state, emit) {
     super(name);
@@ -17,18 +14,8 @@ class Header extends Component {
     return false;
   }
   createElement() {
-    const title =
-      platform() === 'android'
-        ? html`
-            <a class="flex flex-row items-center">
-            
-             <img src="${assets.get('go-homepage-logo.png')}">
-            </a>
-          `
-        : html`
-            <a class="flex flex-row items-center" href="/">
-             
-              <img src="${assets.get('go-homepage-logo.png')}">
+    const title = html`
+            <a class="flex flex-row items-center homepage-logo">
             </a>
           `;
     return html`
