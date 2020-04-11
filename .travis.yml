@@ -21,7 +21,7 @@ deploy:
     secret_access_key: $AWS_SECRET_ACCESS_KEY
     region: "ap-southeast-1"
     app: "go-send"
-    env: "go-send"
+    env: "go-send-staging"
     bucket_name: "elasticbeanstalk-ap-southeast-1-116366738264"
     on:
       branch: $STAGING_BRANCH
