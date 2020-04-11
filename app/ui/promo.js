@@ -19,7 +19,7 @@ class Promo extends Component {
       >
         <div class="flex items-center mx-auto">
           <span class="ml-2 sm:ml-4 text-xs sm:text-base">
-            ${this.state.translate('trailheadPromo')}${' '}
+            ${`Like Firefox Send? You'll love our new full-device VPN. `}
             <a
               class="underline link-blue"
               href="https://go.gov.sg/send-feedback"
