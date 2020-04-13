@@ -103,7 +103,7 @@ tooManyArchives = { $count ->
     *[other] Only { $count } archives are allowed.
 }
 expiredTitle = This link has expired.
-notSupportedDescription = { -send-brand } will not work with this browser. { -send-short-brand } works best with the latest version of { -firefox }, and will work with the current version of most browsers.
+notSupportedDescription = { -send-go-gov-sg } will not work with this browser. { -send-short-brand } works best with the latest version of { -firefox }, and will work with the current version of most browsers.
 downloadFirefox = Download { -firefox }
 legalTitle = { -send-short-brand } Privacy Notice
 legalDateStamp = Version 1.0, dated March 12, 2019
@@ -143,6 +143,6 @@ downloadFirefoxPromo = { -send-short-brand } is brought to you by the all-new { 
 shareLinkDescription = Share the link to your file:
 shareLinkButton = Share link
 # $name is the name of the file
-shareMessage = Download “{ $name }” with { -send-brand }: simple, safe file sharing
+shareMessage = Download “{ $name }” with { -send-go-gov-sg }: simple, safe file sharing
 trailheadPromo = send.go.gov.sg is in ALPHA mode.
 sendFeedback = Have feedback?
